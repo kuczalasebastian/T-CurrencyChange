@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('dubai.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+  
+.logo {
+    font-size: 2em;
+    color: #ffffff
+}
+
+button {
+    display: flex;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right, #fdcb6e, #e17055, #d63031);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+  
+button:active {
+    transform: scale(0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+  
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(253, 203, 110, 0.4);
+    animation: glowing 1s infinite;
+}
+  
+@keyframes glowing {
+    0% {
+      box-shadow: 0 0 5px #fdcb6e;
+    }
+    50% {
+      box-shadow: 0 0 20px #fdcb6e;
+    }
+    100% {
+      box-shadow: 0 0 5px #fdcb6e;
+    }
+}
+  
+input {
+    display: block;
+    width: 33%;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fdcb6e;
+    border-radius: 0;
+    transition: border-color 0.3s ease;
+}
+  
+input:focus {
+    outline: none;
+    border-color: #d63031;
+    box-shadow: 0 0 0 3px rgba(214, 48, 49, 0.4);
+}
+
+input::placeholder {
+    color: #999999;
+    font-style: italic;
+}
+  
+#result {
+    width: 33%;
+    padding: 50px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: transparent;
+}
+  
